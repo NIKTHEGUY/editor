@@ -1,0 +1,9 @@
+/* @import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.bubble.css";
+@import "~quill/dist/quill.snow.css"; */
+div {
+  width: 60%;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: rgb(255, 255, 255);
+}
