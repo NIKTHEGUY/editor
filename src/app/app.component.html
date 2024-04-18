@@ -1,4 +1,9 @@
 <div>
-
-  <quill-editor class="content-editor" [placeholder]="'Insert text here.....'"></quill-editor>
+  <quill-editor class="content-editor" [placeholder]="'Insert text here.....'" [modules]="quillConfiguration"
+    [styles]="{'min-height': '120px'}"></quill-editor>
 </div>
+<div>
+  <quill-editor #editor class="content-editor" [placeholder]="'Insert text here.....'" [modules]="quillConfiguration"
+    [styles]="{'min-height': '120px'}" (onContentChanged)="logChange($event)"></quill-editor>
+</div>
+<button (click)="onclick()">Click</button>
